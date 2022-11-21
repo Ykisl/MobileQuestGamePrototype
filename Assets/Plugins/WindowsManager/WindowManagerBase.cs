@@ -310,7 +310,6 @@ namespace Plugins.WindowsManager
 		private void OnDestroyWindow(object sender, WindowResultEventArgs args)
 		{
 			var window = (IWindow) sender;
-			Debug.LogWarningFormat("Window {0} was destroyed outside of Close() method.", window.WindowId);
 			OnCloseWindow(sender, args);
 		}
 

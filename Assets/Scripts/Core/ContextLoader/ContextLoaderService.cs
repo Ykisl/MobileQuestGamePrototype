@@ -11,7 +11,6 @@ namespace Core.ContextLoader
         private void Start()
         {
             DontDestroyOnLoad(gameObject);
-            LoadScene("Scenes/DebugMenuScene", LoadSceneMode.Additive);
         }
 
         public void LoadScene(string sceneName, LoadSceneMode loadSceneMode, object contextData = null)
